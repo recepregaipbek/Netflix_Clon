@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+}
+.links ul li a{
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 2.5rem;
+ }
+ .banner_contens{
+    margin-top: -12rem;
+ }
+ #banner::after{
+   
+    height: 1.6rem;
+ }
+.footer{
+    padding-bottom: 1rem;
+    padding-left: 2.6rem;
+    margin-top: 0px;
+}
+.footer ul li {
+    margin-top: 0px;
+}
+.row{
+    margin-top: 1.5rem;
+}

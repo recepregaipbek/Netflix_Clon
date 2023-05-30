@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Türkiye - TV Programlarını Çevrimiçi İzleyin, Filmleri Çevrimiçi İzleyin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/neflix-icon.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:1441px)" href="css/responsive.css">
+    <link rel="stylesheet" media="(max-width:380px)" href="css/mobil.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <div class="nav nav_black" id="nav">
+        <img src="images/Netflix_Logo_PMS.png" alt="icons" class="nav_logo">
+        <div class="avatar">
+            <img src="images/you.jfif" alt="avatar" class="nav_avatar">
+            <div class="icon"><i class="fa-solid fa-circle-plus fa-2xs"></i>
+            </div>
+        </div>
+        
+
+    </div>
+    <!--Banner-->
+    <div class="banner" id="banner">
+        <video id="video" class="banner" poster="images/11lar.jpg" style="pointer-events: none;">
+        <source src="images/Queen Charlotte_.mp4" type="video/mp4"></video>
+        <div class="banner_contens">
+            <h1 class="banner-title">Quenn Charlotte</h1>
+            <div class="banner-buttons">
+                <button class="banner_button" id="btn-play-pause" accesskey="p" onclick="PlayPauseVideo();">Play</button>
+                <button class="banner_button">My List </button>
+            </div>
+            <div class="banner_desc">
+                <p>"Bridgerton" dizisinin öncesini anlatan yapımda genç Kraliçe Charlotte ve İngiltere Kralı George'un evliliği, yüksek sosyeteye yön veren destansı bir aşk öyküsüne dönüşüyor.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Netflix Originals-->
+    <div class="row first">
+        <h2>NETLFLİX ORIGINALS</h2>
+        <div class="row_posters" id="slideshow">
+            <img src="images/Quennn-charlotte.jpg" alt="" class="row_poster row_poster_large">
+            <img src="images/bone-large.jpg" alt="" class="row_poster row_poster_large">
+            <img src="images/brıgt-large.webp" alt="" class="row_poster row_poster_large">
+            <img src="images/cem-large.jpeg" alt="" class="row_poster row_poster_large">
+            <img src="images/holmes-large.jfif" alt="" class="row_poster row_poster_large">
+            <img src="images/kıng-large.jfif" alt="" class="row_poster row_poster_large">
+            <img src="images/lupın-large1.jpeg" alt="" class="row_poster row_poster_large">
+            <img src="images/mosul-large.jpg" alt="" class="row_poster row_poster_large">
+            <img src="images/ottoman-large.jfif" alt="" class="row_poster row_poster_large">
+            <img src="images/sky-large.webp" alt="" class="row_poster row_poster_large">
+            <img src="images/stranger-large.jfif" alt="" class="row_poster row_poster_large">
+            <img src="images/sılence-large.jpg" alt="" class="row_poster row_poster_large">
+        </div>
+    </div>
+   
+    <!--Trending now-->
+    <div class="row">
+        <h2>TRENDING NOW</h2>
+        <div class="row_posters">
+            <img src="images/1sm.jpg" alt="" class="row_poster">
+            <img src="images/2sm.jpg" alt="" class="row_poster">
+            <img src="images/3sm.webp" alt="" class="row_poster">
+            <img src="images/sm4.jpg" alt="" class="row_poster">
+            <img src="images/sm5.jpg" alt="" class="row_poster">
+            <img src="images/sm6.jpg" alt="" class="row_poster">
+            <img src="images/sm7.jpg" alt="" class="row_poster">
+            <img src="images/sm8.jfif" alt="" class="row_poster">
+            <img src="images/sm9.jfif" alt="" class="row_poster">
+            <img src="images/sm10.jpg" alt="" class="row_poster">
+            <img src="images/sm11.jpg" alt="" class="row_poster">
+            <img src="images/sm12.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+   
+<!--Top Rated-->
+<div class="row">
+    <h2>TOP RATED</h2>
+    <div class="row_posters">
+        <img src="images/sm12.jpg" alt="" class="row_poster">
+        <img src="images/sm11.jpg" alt="" class="row_poster">
+        <img src="images/sm10.jpg" alt="" class="row_poster">
+        <img src="images/sm7.jpg" alt="" class="row_poster">
+        <img src="images/sm5.jpg" alt="" class="row_poster">
+        <img src="images/sm6.jpg" alt="" class="row_poster">
+        <img src="images/sm4.jpg" alt="" class="row_poster">
+        <img src="images/sm8.jfif" alt="" class="row_poster">
+        <img src="images/sm9.jfif" alt="" class="row_poster">
+        <img src="images/3sm.jpg" alt="" class="row_poster">
+        <img src="images/2sm.jpg" alt="" class="row_poster">
+        <img src="images/1sm.jpg" alt="" class="row_poster">
+    </div>
+</div>
+    <!--Comedy Movies-->
+    <div class="row">
+        <h2>COMEDY MOVES</h2>
+        <div class="row_posters">
+            <img src="images/1sm.jpg" alt="" class="row_poster">
+            <img src="images/2sm.jpg" alt="" class="row_poster">
+            <img src="images/3sm.webp" alt="" class="row_poster">
+            <img src="images/sm4.jpg" alt="" class="row_poster">
+            <img src="images/sm5.jpg" alt="" class="row_poster">
+            <img src="images/sm6.jpg" alt="" class="row_poster">
+            <img src="images/sm7.jpg" alt="" class="row_poster">
+            <img src="images/sm8.jfif" alt="" class="row_poster">
+            <img src="images/sm9.jfif" alt="" class="row_poster">
+            <img src="images/sm10.jpg" alt="" class="row_poster">
+            <img src="images/sm11.jpg" alt="" class="row_poster">
+            <img src="images/sm12.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+        <!--Romance Movies-->
+        <div class="row">
+            <h2>ROMANCE MOVIES</h2>
+            <div class="row_posters">
+                <img src="images/1sm.jpg" alt="" class="row_poster">
+                <img src="images/2sm.jpg" alt="" class="row_poster">
+                <img src="images/3sm.webp" alt="" class="row_poster">
+                <img src="images/sm4.jpg" alt="" class="row_poster">
+                <img src="images/sm5.jpg" alt="" class="row_poster">
+                <img src="images/sm6.jpg" alt="" class="row_poster">
+                <img src="images/sm7.jpg" alt="" class="row_poster">
+                <img src="images/sm8.jfif" alt="" class="row_poster">
+                <img src="images/sm9.jfif" alt="" class="row_poster">
+                <img src="images/sm10.jpg" alt="" class="row_poster">
+                <img src="images/sm11.jpg" alt="" class="row_poster">
+                <img src="images/sm12.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+            <!--Horror Movies-->
+            <div class="row">
+                <h2>HORROR MOVIES</h2>
+                <div class="row_posters">
+                    <img src="images/1sm.jpg" alt="" class="row_poster">
+                    <img src="images/2sm.jpg" alt="" class="row_poster">
+                    <img src="images/3sm.webp" alt="" class="row_poster">
+                    <img src="images/sm4.jpg" alt="" class="row_poster">
+                    <img src="images/sm5.jpg" alt="" class="row_poster">
+                    <img src="images/sm6.jpg" alt="" class="row_poster">
+                    <img src="images/sm7.jpg" alt="" class="row_poster">
+                    <img src="images/sm8.jfif" alt="" class="row_poster">
+                    <img src="images/sm9.jfif" alt="" class="row_poster">
+                    <img src="images/sm10.jpg" alt="" class="row_poster">
+                    <img src="images/sm11.jpg" alt="" class="row_poster">
+                    <img src="images/sm12.jpg" alt="" class="row_poster">
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="footer">
+                <div>
+                    <p>Sorularınız mı var ? <a href="#"> bekrecep657@gmail.com</a> mail adresinden ulaşım sağlayabilirsiniz.</p>
+                    <div class="links">
+                        <ul>
+                            <li>   
+                        <a href="#">SSS</a>
+                        <a href="#">Yardım Merkezi</a>
+                        <a href="#">Hesap</a>
+                        <a href="#">Medya Merkezi</a>
+                            </li>
+                            <li>    
+                                <a href="#">Yatırım İlişkileri</a>
+                                <a href="#">İş İmkanları</a>
+                                <a href="#">Hediye Kartı Kullan</a>
+                                <a href="#">İzleme Yolları</a>
+                            </li>
+                            <li>    
+                                <a href="#">Kullanım Koşulları</a>
+                                <a href="#">Gizlilik</a>
+                                <a href="#">Çerez Tercihleri</a>
+                                <a href="#">Kurumsal Bilgiler</a>
+                            </li>
+                            <li>    
+                                <a href="#">Bize Ulaşın</a>
+                                <a href="#">Hız Testi</a>
+                                <a href="#">Yasal Hükümler</a>
+                                <a href="#">Sadece Neflix'te</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                    <div>
+                       
+                        <select id="languageSelect">    
+                            
+                          <option value="tr">Türkçe</option>
+                          <option value="en">English</option>
+                          <option value="fr">Français</option>
+                          <option value="es">Español</option>
+                          <!-- Diğer dil seçeneklerini buraya ekleyebilirsiniz -->
+                        </select>
+                      </div>
+                      <div class="end">
+                        <p>Neflix Türkiye</p>
+                      </div>
+                      
+                    
+                </div>
+            </div>
+                
+</div>
+<script>
+player = document.getElementById('video');
+btnPlaypause = document.getElementById('btn-play-pause');
+
+player.addEventListener('play', function() {
+  changeButtonType(btnPlaypause, 'Pause');
+}, false);
+
+player.addEventListener('pause', function() {
+  changeButtonType(btnPlaypause, 'Play');
+}, false);
+
+function PlayPauseVideo() {
+  if (player.paused || player.ended) {
+    player.play();
+  } else {
+    player.pause();
+  }
+}
+
+function changeButtonType(btn, value) {
+  btn.title = value;
+  btn.textContent = value;
+}
+
+</script>
+</body>
+</html>
